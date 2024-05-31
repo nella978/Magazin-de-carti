@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="cos.css" />
+    </head>
+    <body>
+        <header class="container" id="header">
+            <a id="header-logo" href="index.html">
+                <img src="images/logo.svg" alt="Books" />
+            </a>
+
+            <form id="header-form" action="carti.html" method="get">
+                <button type="button">
+                    <img src="images/search.svg" alt="" />
+                </button>
+                <input type="carte" name="cauta" placeholder="Cauta o carte" />
+            </form>
+
+            <nav id="header-links">
+                <a href="cos.html" class="cos">
+                    <img src="images/shop.svg" alt="" />
+                </a>
+                <a href="sign_in.html"><img src="images/user.svg" alt="" /></a>
+            </nav>
+        </header>
+
+        <section id="cos" class="container">
+            <div class="header">
+                <a href="index.html">&lt; Inapoi</a>
+                <div class="total">
+                    <span class="titlu">Total:</span>
+                    <span class="suma">390<sub>mdl</sub></span>
+                </div>
+            </div>
+            <div class="cos-list">
+                <div class="cos-item" data-id="1">
+                    <img src="images/carti/carte1.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Carte 1</h3>
+                        <p class="autor">Descriere Carte 1</p>
+                        <p class="pret">210<sub>mdl</sub></p>
+                    </div>
+                    <div class="cos-item-actions">
+                        <button type="button" class="minus">-</button>
+                        <span class="">1</span>
+                        <button type="button" class="plus">+</button>
+                    </div>
+                </div>
+
+                <div class="cos-item">
+                    <img src="images/carti/carte2.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Carte 2</h3>
+                        <p class="autor">Descriere Carte 2</p>
+                        <p class="pret">180<sub>mdl</sub></p>
+                    </div>
+                    <div class="cos-item-actions">
+                        <button type="button" class="minus">-</button>
+                        <span class="">1</span>
+                        <button type="button" class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <div>
+                <img class="footer-img" src="images/carti.png" alt="" />
+                <div>
+                    <span>
+                        Aboneaza-te pentru a fi la curent cu noile produse si
+                    </span>
+                    <form>
+                        <input
+                            type="email"
+                            placeholder="Introdu adresa de email"
+                        />
+                        <input
+                            type="button"
+                            value="Aboneaza-te"
+                            class="button"
+                        />
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <a href="carti.html">Catalog de Carti</a>
+                    <a href="cos.html">Cos de Cumparaturi</a>
+                </div>
+            </div>
+
+            <div>
+                <span>&copy; 2024, Books Store</span>
+            </div>
+        </footer>
+
+        <script src="listaCarti.js"></script>
+        <script src="cos.js"></script>
+    </body>
+</html>

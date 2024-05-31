@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catalog de Carti</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="carti.css" />
+    </head>
+    <body>
+        <header class="container" id="header">
+            <a id="header-logo" href="index.html">
+                <img src="images/logo.svg" alt="Books" />
+            </a>
+
+            <form id="header-form" action="carti.html" method="get">
+                <button type="button">
+                    <img src="images/search.svg" alt="" />
+                </button>
+                <input type="carte" name="cauta" placeholder="Cauta o carte" />
+            </form>
+
+            <nav id="header-links">
+                <a href="cos.html" class="cos">
+                    <img src="images/shop.svg" alt="" />
+                </a>
+                <a href="sign_in.html"><img src="images/user.svg" alt="" /></a>
+            </nav>
+        </header>
+
+        <section id="carti" class="container">
+            <div class="header">
+                <a href="index.html">&lt; Acasă</a>
+                <form class="filtre">
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="best-seller"
+                            id="best-seller"
+                        />
+                        <label for="best-seller">
+                            <img src="images/check.svg" class="input-check" />
+                            <span>Best-Seller</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="dezv-personala"
+                            id="dezv-personala"
+                        />
+                        <label for="dezv-personala">
+                            <img src="images/check.svg" class="input-check" />
+                            <span>Dezv. Personală</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="carti-noi"
+                            id="carti-noi"
+                        />
+                        <label for="carti-noi">
+                            <img src="images/check.svg" class="input-check" />
+                            <span>Carti Noi</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="top-2024" id="top-2024" />
+                        <label for="top-2024">
+                            <img src="images/check.svg" class="input-check" />
+                            <span>Top 2024</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="reducare" id="reducare" />
+                        <label for="reducare">
+                            <img src="images/check.svg" class="input-check" />
+                            <span>Reducere</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="carti-list">
+                <a href="carte.html" class="carti-item">
+                    <img src="images/carti/carte1.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Nume Carte</h3>
+                        <p class="autor">autor</p>
+                        <p class="pret">pret</p>
+                    </div>
+                </a>
+                <a href="carte.html" class="carti-item">
+                    <img src="images/carti/carte2.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Nume Carte</h3>
+                        <p class="autor">autor</p>
+                        <p class="pret">pret</p>
+                    </div>
+                </a>
+                <a href="carte.html" class="carti-item">
+                    <img src="images/carti/carte3.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Nume Carte</h3>
+                        <p class="autor">autor</p>
+                        <p class="pret">pret</p>
+                    </div>
+                </a>
+                <a href="carte.html" class="carti-item">
+                    <img src="images/carti/carte4.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Nume Carte</h3>
+                        <p class="autor">autor</p>
+                        <p class="pret">pret</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="container">
+            <div>
+                <img class="footer-img" src="images/carti.png" alt="" />
+                <div>
+                    <span>
+                        Aboneaza-te pentru a fi la curent cu noile produse si
+                    </span>
+                    <form>
+                        <input
+                            type="email"
+                            placeholder="Introdu adresa de email"
+                        />
+                        <input
+                            type="button"
+                            value="Aboneaza-te"
+                            class="button"
+                        />
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <a href="carte.html">Catalog de Carti</a>
+                    <a href="cos.html">Cos de Cumparaturi</a>
+                </div>
+            </div>
+
+            <div>
+                <span>&copy; 2024, Books Store</span>
+            </div>
+        </footer>
+
+        <script src="cos.js"></script>
+        <script src="listaCarti.js"></script>
+        <script src="carti.js"></script>
+    </body>
+</html>

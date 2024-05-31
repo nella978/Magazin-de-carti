@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagina Principala</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header class="container" id="header">
+            <a id="header-logo" href="index.html">
+                <img src="images/logo.svg" alt="Books" />
+            </a>
+
+            <form id="header-form" action="carti.html" method="get">
+                <button type="button">
+                    <img src="images/search.svg" alt="" />
+                </button>
+                <input type="carte" name="cauta" placeholder="Cauta o carte" />
+            </form>
+
+            <nav id="header-links">
+                <a href="cos.html" class="cos">
+                    <img src="images/shop.svg" alt="" />
+                </a>
+                <a href="sign_in.html"><img src="images/user.svg" alt="" /></a>
+            </nav>
+        </header>
+
+        <section id="slogan" class="container">
+            <div class="slogan-text">
+                <h1>Descopera liberatea prin Carti</h1>
+            </div>
+            <div class="slogan-img">
+                <img src="images/slogan.png" alt="" />
+            </div>
+        </section>
+
+        <section id="best-seller" class="container">
+            <div class="header">
+                <h2>Cartile Noastre</h2>
+                <a href="carti.html">Mai Mult &gt;</a>
+            </div>
+            <div class="best-seller-list">
+                <a href="carte.html?id=1" class="best-seller-item">
+                    <img src="images/carti/carte5.jpg" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Cei trei muschetari</h3>
+                        <p class="autor">Alexandre Dumas</p>
+
+                        <p class="pret">120<sub>mdl</sub></p>
+                    </div>
+                </a>
+                <a href="carte.html?id=3" class="best-seller-item">
+                    <img src="images/carti/carte2.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Zece negri mititei</h3>
+                        <p class="autor">Agatha Christie</p>
+
+                        <p class="pret">100<sub>mdl</sub></p>
+                    </div>
+                </a>
+                <a href="carte.html?id4" class="best-seller-item">
+                    <img src="images/carti/carte3.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Femeia in alb</h3>
+                        <p class="autor">Wilkie Collins</p>
+
+                        <p class="pret">130<sub>mdl</sub></p>
+                    </div>
+                </a>
+                <a href="carte.html?id=5" class="best-seller-item">
+                    <img src="images/carti/carte4.png" alt="" />
+                    <div class="info">
+                        <h3 class="nume">Îngerii și demonii</h3>
+                        <p class="autor">Dan Brown</p>
+
+                        <p class="pret">145<sub>mdl</sub></p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="carti-noi" class="container">
+            <div class="info">
+                <h2>Carti noi luna aceasta</h2>
+                <p>
+                    Este timpul sa-ti actualizezi lista de citit cu unele dintre
+                    cele mai recente si cele mai bune lansari din lumea
+                    literara. De la thriller-uri care-ti fac inima sa bata mai
+                    tare la memorii captivante, noile lansari ale acestei
+                    saptamani ofera ceva pentru fiecare.
+                </p>
+            </div>
+            <img src="images/carti-nou.png" alt="" />
+        </section>
+
+        <section id="stiri" class="container">
+            <h2>Stiri</h2>
+            <div class="stiri-lista">
+                <div class="articol">
+                    <div>
+                        <h4>Ce carti sa citesti in 2024?</h4>
+                        <p>
+                            Aceasta este blogul pe care stim ca toti l-ati
+                            asteptat. Va prezentam cele mai bune 10 titluri
+                            pentru 2024 in fictiune, non-fictiune si carti
+                            pentru copii; o combinatie glorioasa de povesti
+                            magistrale, subiecte captivante si suspansuri care
+                            te tin cu sufletul la gura...
+                        </p>
+                    </div>
+                    <img src="images/articol1.png" alt="" />
+                </div>
+
+                <div class="articol">
+                    <div>
+                        <h4>Doresti carti pentru copii?</h4>
+                        <p>
+                            Cartile pentru copii sunt o modalitate minunata de a
+                            introduce copiii in lumea lecturii. Acestea ii ajuta
+                            sa isi dezvolte vocabularul, sa invete lucruri noi
+                            si sa isi foloseasca imaginatia. In plus, cititul
+                            cartilor pentru copii le ofera ocazia de a petrece
+                            timp de calitate cu parintii lor...
+                        </p>
+                    </div>
+                    <img src="images/articol2.png" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <div>
+                <img class="footer-img" src="images/carti.png" alt="" />
+                <div>
+                    <span>
+                        Aboneaza-te pentru a fi la curent cu noile produse si
+                    </span>
+                    <form>
+                        <input
+                            type="email"
+                            placeholder="Introdu adresa de email"
+                        />
+                        <input
+                            type="button"
+                            value="Aboneaza-te"
+                            class="button"
+                        />
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <a href="carti.html">Catalog de Carti</a>
+                    <a href="cos.html">Cos de Cumparaturi</a>
+                </div>
+            </div>
+
+            <div>
+                <span>&copy; 2024, Books Store</span>
+            </div>
+        </footer>
+
+        <script src="cos.js"></script>
+        <script src="listaCarti.js"></script>
+    </body>
+</html>

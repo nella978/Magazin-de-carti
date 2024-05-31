@@ -1,0 +1,269 @@
+#slogan .slogan-text {
+    flex-basis: 60%;
+    flex-grow: 1;
+}
+
+#slogan .slogan-text h1 {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+#slogan .slogan-img {
+    width: 40%;
+    object-fit: contain;
+}
+
+#slogan .slogan-img img {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    #slogan .slogan-text h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    #slogan {
+        flex-direction: column-reverse;
+    }
+
+    #slogan .slogan-text {
+        order: 2;
+        flex-basis: 100%;
+        margin: 1em 0;
+    }
+
+    #slogan .slogan-text h1 {
+        font-size: 2em;
+    }
+
+    #slogan .slogan-img {
+        order: 1;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+#best-seller {
+    flex-direction: column;
+}
+
+#best-seller .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#best-seller .header a {
+    font: inherit;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#best-seller .best-seller-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1em 0;
+
+    display: flex;
+    gap: 1em;
+}
+
+#best-seller .best-seller-list::-webkit-scrollbar {
+    display: none;
+}
+
+#best-seller .best-seller-list .best-seller-item {
+    max-width: fit-content;
+    height: 12em;
+    padding: 0.4em 1em;
+
+    background-image: linear-gradient(
+        #b8b8c11a 8%,
+        #f4f4ff1a 50%,
+        #85858c1a 100%
+    );
+    border-radius: 4px;
+
+    display: flex;
+    gap: 0.5em;
+
+    text-decoration: none;
+}
+
+#best-seller .best-seller-list .best-seller-item img {
+    height: 12em;
+    object-fit: cover;
+}
+
+#best-seller .best-seller-list .best-seller-item .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline;
+    gap: 0.5em;
+
+    color: #2828d0;
+
+    height: 100%;
+}
+
+#best-seller .best-seller-list .best-seller-item .info * {
+    margin: 0;
+    padding: 0;
+
+    transition: all 0.3s;
+}
+
+#best-seller .best-seller-list .best-seller-item .nume {
+    font-size: 1.5em;
+    font-weight: 800;
+
+    opacity: 0.7;
+}
+
+#best-seller .best-seller-list .best-seller-item .autor {
+    opacity: 0.5;
+}
+
+#best-seller .best-seller-list .best-seller-item .pret {
+    margin-top: auto;
+    margin-bottom: 1em;
+
+    font-size: 1.4rem;
+    font-weight: 800;
+
+    opacity: 0.5;
+}
+
+#best-seller .best-seller-list .best-seller-item:hover * {
+    opacity: 1;
+}
+
+#carti-noi {
+    gap: 3em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carti-noi .info {
+    max-width: 600px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    justify-content: center;
+}
+
+#carti-noi .info h2 {
+    font-size: 2em;
+    font-weight: 800;
+
+    color: #2828d0;
+}
+
+@media (max-width: 1024px) {
+    #carti-noi {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #carti-noi .info h2 {
+        font-size: 1.5em;
+    }
+
+    #carti-noi img {
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+#stiri {
+    flex-direction: column;
+    gap: 1em;
+}
+
+#stiri .stiri-lista {
+    display: flex;
+    justify-content: start;
+
+    gap: 1em;
+}
+
+#stiri .articol {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #232327;
+    border-radius: 12px;
+    overflow: hidden;
+
+    height: min-content;
+
+    padding: 1em 1.2em;
+}
+
+#stiri .articol h4 {
+    position: relative;
+
+    font-size: 1.2em;
+    font-weight: 600;
+
+    margin: 0;
+}
+
+#stiri .articol h4::after {
+    content: " ";
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+
+    height: 1px;
+    width: 30px;
+
+    background-color: #2828d0;
+}
+
+#stiri .articol p {
+    font-size: 0.8em;
+    opacity: 0.7;
+    padding-top: 4px;
+
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+#stiri .articol img {
+    /* width: 100%; */
+    object-fit: contain;
+
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    /* make both have the same height */
+    #stiri .stiri-lista {
+        align-items: normal;
+    }
+
+    #stiri .articol {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #stiri .articol img {
+        width: 100%;
+    }
+}

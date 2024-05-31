@@ -1,0 +1,187 @@
+#carte {
+    flex-direction: column;
+    gap: 2em;
+}
+
+#carte .header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#carte .carte-info {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* flex-wrap: wrap; */
+    gap: 60px;
+}
+
+#carte .carte-info img {
+    width: 100%;
+    max-width: 300px;
+}
+
+#carte .carte-info .info {
+    flex: auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 8px;
+}
+
+#carte .carte-info .info .nume {
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0;
+}
+
+#carte .carte-info .info .autor {
+    opacity: 0.5;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+}
+
+#carte .carte-info .info .pret {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0;
+}
+
+#carte .carte-info .rezumat {
+    display: flex;
+    flex-direction: column;
+    max-width: 64ch;
+    min-width: 32ch;
+    width: fit-content;
+}
+
+#carte .carte-info .filtre {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 4px;
+}
+
+#carte .carte-info .filtre ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+#carte .carte-info .filtre ul li {
+    height: min-content;
+
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 8px;
+    color: #fff;
+
+    border-radius: 20px;
+    background-color: #2828d0;
+}
+
+@media (max-width: 768px) {
+    #carte .carte-info {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #carte .carte-info img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    #carte .carte-info .info {
+        flex: auto;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 8px;
+    }
+
+    #carte .carte-info .info .nume {
+        font-size: 2em;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    #carte .carte-info .info .autor {
+        opacity: 0.5;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    #carte .carte-info .info .pret {
+        font-size: 1.5em;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    #carte .carte-info .rezumat {
+        display: flex;
+        flex-direction: column;
+        max-width: 64ch;
+        min-width: 32ch;
+        width: fit-content;
+    }
+
+    #carte .carte-info .filtre {
+        display: flex;
+        align-items: center;
+        text-wrap: nowrap;
+        gap: 4px;
+    }
+
+    #carte .carte-info .filtre ul {
+        display: flex;
+        gap: 12px;
+        list-style: none;
+    }
+
+    #carte .carte-info .filtre ul li {
+        height: min-content;
+
+        font-size: 12px;
+        line-height: 14px;
+        padding: 4px 8px;
+        color: #fff;
+
+        border-radius: 20px;
+        background-color: #2828d0;
+    }
+}
+
+#carte .carte-cumpara {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#carte .carte-cumpara .button {
+    flex: 1;
+
+    outline: none;
+    border: none;
+    padding: 12px 16px;
+    width: 300px;
+    min-width: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #ef6b4a;
+    text-decoration: none;
+}
+
+#carte .carte-cumpara .button:hover {
+    background-color: #f57b5e;
+}

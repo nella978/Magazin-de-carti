@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cumpara o Carte</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="carte.css" />
+    </head>
+    <body>
+        <header class="container" id="header">
+            <a id="header-logo" href="index.html">
+                <img src="images/logo.svg" alt="Books" />
+            </a>
+
+            <form id="header-form" action="carti.html" method="get">
+                <button type="button">
+                    <img src="images/search.svg" alt="" />
+                </button>
+                <input type="carte" name="cauta" placeholder="Cauta o carte" />
+            </form>
+
+            <nav id="header-links">
+                <a href="cos.html" class="cos">
+                    <img src="images/shop.svg" alt="" />
+                </a>
+                <a href="sign_in.html"><img src="images/user.svg" alt="" /></a>
+            </nav>
+        </header>
+
+        <section id="carte" class="container">
+            <div class="header">
+                <a href="carti.html">&lt; Inapoi</a>
+            </div>
+            <div class="carte-info"></div>
+            <div class="carte-cumpara">
+                <button class="button">
+                    <span class="pret"><span>180</span><sub>mdl</sub></span>
+                    <span>Adauga in Cos</span>
+                </button>
+                <a href="cos.html" class="button">Finiseaza Comanda</a>
+            </div>
+        </section>
+
+        <footer class="container">
+            <div>
+                <img class="footer-img" src="images/carti.png" alt="" />
+                <div>
+                    <span>
+                        Aboneaza-te pentru a fi la curent cu noile produse si
+                    </span>
+                    <form>
+                        <input
+                            type="email"
+                            placeholder="Introdu adresa de email"
+                        />
+                        <input
+                            type="button"
+                            value="Aboneaza-te"
+                            class="button"
+                        />
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <a href="carti.html">Catalog de Carti</a>
+                    <a href="cos.html">Cos de Cumparaturi</a>
+                </div>
+            </div>
+
+            <div>
+                <span>&copy; 2024, Books Store</span>
+            </div>
+        </footer>
+
+        <script src="listaCarti.js"></script>
+        <script src="cos.js"></script>
+        <script src="carte.js"></script>
+    </body>
+</html>
